@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f3c529a5fafc302677fe4266e4649f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9f3c529a5fafc302677fe4266e4649f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9f3c529a5fafc302677fe4266e4649f9 = L.map(
+                "map_9f3c529a5fafc302677fe4266e4649f9",
+                {
+                    center: [-20.142865514392074, -44.890519758240714],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+
+            
+
+        
+    
+            var tile_layer_3255fc1ebbfccafe97bc378768fb4a05 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3255fc1ebbfccafe97bc378768fb4a05.addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+            var tile_layer_ced15412bb96a24ba3d1381bcfb3cc0a = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}?access_token=your_mapbox_access_token",
+                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ced15412bb96a24ba3d1381bcfb3cc0a.addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+            var marker_dc616869773e087ef3976db105e9f4e3 = L.marker(
+                [-20.17333394845745, -44.89282218554545],
+                {}
+            ).addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+        var popup_f41c3adc395c742ac2dd73af64a6a56a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73b041e485f834a8947fc211c59addcc = $(`<div id="html_73b041e485f834a8947fc211c59addcc" style="width: 100.0%; height: 100.0%;">Divinópolis Clube</div>`)[0];
+                popup_f41c3adc395c742ac2dd73af64a6a56a.setContent(html_73b041e485f834a8947fc211c59addcc);
+            
+        
+
+        marker_dc616869773e087ef3976db105e9f4e3.bindPopup(popup_f41c3adc395c742ac2dd73af64a6a56a)
+        ;
+
+        
+    
+    
+            var marker_e0408c5db4b9bfba4e84c42ed7141901 = L.marker(
+                [-20.14487131978259, -44.8960548740302],
+                {}
+            ).addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+        var popup_baf4705b579acee3ef442bd854f2e2e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe00bef5ba7120077edbbcedabec5598 = $(`<div id="html_fe00bef5ba7120077edbbcedabec5598" style="width: 100.0%; height: 100.0%;">Mitra Diocesana</div>`)[0];
+                popup_baf4705b579acee3ef442bd854f2e2e3.setContent(html_fe00bef5ba7120077edbbcedabec5598);
+            
+        
+
+        marker_e0408c5db4b9bfba4e84c42ed7141901.bindPopup(popup_baf4705b579acee3ef442bd854f2e2e3)
+        ;
+
+        
+    
+    
+            var marker_244f8ae23d742f01db1e47adb6228b5b = L.marker(
+                [-20.144949258295526, -44.89676770118653],
+                {}
+            ).addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+        var popup_ccee253a9b29e0261b3706425756263b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2b3de53ead66f14a91b8af15a15b71f = $(`<div id="html_f2b3de53ead66f14a91b8af15a15b71f" style="width: 100.0%; height: 100.0%;">Rádio Divinópolis</div>`)[0];
+                popup_ccee253a9b29e0261b3706425756263b.setContent(html_f2b3de53ead66f14a91b8af15a15b71f);
+            
+        
+
+        marker_244f8ae23d742f01db1e47adb6228b5b.bindPopup(popup_ccee253a9b29e0261b3706425756263b)
+        ;
+
+        
+    
+    
+            var marker_9f9638127a7f1f3acadfac588aeb0678 = L.marker(
+                [-19.969738690777252, -44.86158204580104],
+                {}
+            ).addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+        
+    
+        var popup_c934971d4c7a5e8d0df42a217ba86ffd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4c86d2d9cf5a481c4a86a1b5e6eea4 = $(`<div id="html_7f4c86d2d9cf5a481c4a86a1b5e6eea4" style="width: 100.0%; height: 100.0%;">Laticínios Porto Alegre São Gonçalo</div>`)[0];
+                popup_c934971d4c7a5e8d0df42a217ba86ffd.setContent(html_7f4c86d2d9cf5a481c4a86a1b5e6eea4);
+            
+        
+
+        marker_9f9638127a7f1f3acadfac588aeb0678.bindPopup(popup_c934971d4c7a5e8d0df42a217ba86ffd)
+        ;
+
+        
+    
+    
+            var layer_control_e77e5c90175a62b69d416200a4207d25_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3255fc1ebbfccafe97bc378768fb4a05,
+                },
+                overlays :  {
+                    "Satellite" : tile_layer_ced15412bb96a24ba3d1381bcfb3cc0a,
+                },
+            };
+            let layer_control_e77e5c90175a62b69d416200a4207d25 = L.control.layers(
+                layer_control_e77e5c90175a62b69d416200a4207d25_layers.base_layers,
+                layer_control_e77e5c90175a62b69d416200a4207d25_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9f3c529a5fafc302677fe4266e4649f9);
+
+        
+</script>
+</html>
